@@ -18,18 +18,14 @@ return [
         ->asset(__DIR__.'/less/forum.less'),
 
     new Extend\FormatterConfiguration(function (Configurator $config) {
-        $config->Emoji->useEmojiOne();
-        $config->Emoji->omitImageSize();
-        $config->Emoji->useSVG();
-
-        $config->Emoji->addAlias(':)', '🙂');
-        $config->Emoji->addAlias(':D', '😃');
-        $config->Emoji->addAlias(':P', '😛');
-        $config->Emoji->addAlias(':(', '🙁');
-        $config->Emoji->addAlias(':|', '😐');
-        $config->Emoji->addAlias(';)', '😉');
-        $config->Emoji->addAlias(':\'(', '😢');
-        $config->Emoji->addAlias(':O', '😮');
-        $config->Emoji->addAlias('>:(', '😡');
+        $config->Emoticons->add(':)', '🙂');
+        $config->Emoticons->add(':D', '😃');
+        $config->Emoticons->add(':P', '😛');
+        $config->Emoticons->add(':(', '🙁');
+        $config->Emoticons->add(':|', '😐');
+        $config->Emoticons->add(';)', '😉');
+        $config->Emoticons->add(':\'(', '😢');
+        $config->Emoticons->add(':O', '😮');
+        $config->Emoticons->add('>:(', '😡');
     })
 ];
